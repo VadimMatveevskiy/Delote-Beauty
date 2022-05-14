@@ -1,0 +1,151 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+.top{
+    position: relative;
+    background-image: url('../../images/content/top/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    top: -100px;
+    height: 100vh;
+    &__inner{
+        padding-top: 30vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 58vh;
+        justify-content: center;
+    }
+    &__title{
+        @extend %EBGaramond-700;
+        font-size: 72px;
+        line-height: 86px;
+        width: 512px;
+        flex-grow: 1;
+        z-index: 1;
+    }
+    &__slide{
+        position: relative;
+        color: #fff;
+        z-index: 1;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 30px;
+            border-radius: 8px;
+            border: 1px solid #fff;
+            left: -40px;
+            top: -5px
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background-color: #fff;
+            border-radius: 50px;
+            left: -31px;
+            top: 3px;
+            transition: all .3s;
+        }
+        &.top__slide--active{
+            &::after{
+                content: '';
+                position: absolute;
+                width: 4px;
+                height: 4px;
+                background-color: #fff;
+                border-radius: 50px;
+                left: -31px;
+                top: 14px;
+            }
+        }
+    }
+}
+.services{
+    padding-top: 120px;
+    margin-top: -100px;
+    &__title-img{
+        margin: 0 auto;
+        margin-bottom: 60px;
+    }
+    &__text{
+        max-width: 856px;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 27px;
+    }
+    &__inner{
+        margin-top: 115px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 44px;
+    }
+    &__item{
+        margin-bottom: 36px;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            width: 396px;
+            height: 300px;
+            border: 1px solid #CDAA7D;
+            right: -20px;
+            top: -20px;
+            z-index: -1;
+            opacity: 0.5;
+        }
+    }
+    &__item-img{
+        margin-bottom: 30px;
+    }
+    &__item-text{
+        @extend %EBGaramond-400;
+        font-size: 30px;
+        line-height: 36px;
+    }
+}
+.partners{
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 114px 0 100px;
+    }
+}
+.ourWork{
+    padding: 68px 0 100px;
+    &__title{
+        margin-bottom: 80px;
+    }
+    &__list{
+        margin: 0 auto;
+        display: flex;
+        width: 722px;
+        justify-content: space-between;
+        margin-bottom: 60px;
+    }
+    &__btn{
+        background-color: transparent;
+        padding: 0;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        &.mixitup-control-active{
+            color: $hover;
+            border-bottom: 1px solid $hover;
+        }
+    }
+    &__inner{
+        display: flex;
+        flex-wrap: wrap;
+        grid-gap: 24px;
+    }
+}
+

@@ -1,9 +1,45 @@
 @font-face{
-    font-family: 'Rubik-Regular';
+    font-family: 'CormorantGaramond-Regular';
     font-weight: 400;
     font-style: normal;
-    src: local('Rubik-Regular'),
-        url('../fonts/Rubik-Regular.woff2') format('woff2'),
-        url('../fonts/Rubik-Regular.woff') format('woff');
+    src: local('CormorantGaramond-Regular'),
+        url('../fonts/CormorantGaramond-Regular.woff2') format('woff2'),
+        url('../fonts/CormorantGaramond-Regular.woff') format('woff');
+        font-display: swap;
+}
+@font-face{
+    font-family: 'CormorantGaramond-SemiBold';
+    font-weight: 600;
+    font-style: normal;
+    src: local('CormorantGaramond-SemiBold'),
+        url('../fonts/CormorantGaramond-SemiBold.woff2') format('woff2'),
+        url('../fonts/CormorantGaramond-SemiBold.woff') format('woff');
+        font-display: swap;
+}
+@font-face{
+    font-family: 'CormorantGaramond-Bold';
+    font-weight: 700;
+    font-style: normal;
+    src: local('CormorantGaramond-Bold'),
+        url('../fontsCormorantGaramond-Bold.woff2') format('woff2'),
+        url('../fontsCormorantGaramond-Bold.woff') format('woff');
+        font-display: swap;
+}
+@font-face{
+    font-family: 'EBGaramond-Regular';
+    font-weight: 400;
+    font-style: normal;
+    src: local('EBGaramond-Regular'),
+        url('../fonts/EBGaramond-Regular.woff2') format('woff2'),
+        url('../fonts/EBGaramond-Regular.woff') format('woff');
+        font-display: swap;
+}
+@font-face{
+    font-family: 'EBGaramond-Bold';
+    font-weight: 700;
+    font-style: normal;
+    src: local('EBGaramond-Bold'),
+        url('../fonts/EBGaramond-Bold.woff2') format('woff2'),
+        url('../fonts/EBGaramond-Bold.woff') format('woff');
         font-display: swap;
 }

@@ -5,25 +5,175 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Delote-Beauty</title>
     <link rel="stylesheet" href="css/index.min.css">
+    <link rel="stylesheet" href="css/header.min.css">
+    <link rel="stylesheet" href="css/footer.min.css">
 </head>
 
 <body>
     <header class="header">
-
+        <div class="container">
+            <div class="header__inner">
+                <a class="header__social-link" href="#">
+                    <img class="header__social-img" src="images/icon/insta.svg" alt="instagram">
+                </a>
+                <nav class="header__nav-one">
+                    <ul class="header__items-one">
+                        <li class="header__item-one">
+                            <a class="header__item-one-link" href="#">Главная</a>
+                        </li>
+                        <li class="header__item-one">
+                            <a class="header__item-one-link" href="#">Мастера</a>
+                        </li>
+                        <li class="header__item-one">
+                            <a class="header__item-one-link" href="#">Косметика</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a class="header__logo-link" href="#">
+                    <img class="header__logo-img" src="images/icon/logo.svg" alt="logo">
+                </a>
+                <nav class="header__nav-two">
+                    <ul class="header__items-two">
+                        <li class="header__item-two">
+                            <a class="header__item-two-link" href="#">Акции</a>
+                        </li>
+                        <li class="header__item-two">
+                            <a class="header__item-two-link" href="#">Отзывы</a>
+                        </li>
+                        <li class="header__item-two">
+                            <a class="header__item-two-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="header__btn">
+                    <span class="header__btn-line"></span>
+                </button>
+            </div>
+        </div>
     </header>
 
-    
-    <main class="main">
 
+    <main class="main">
+        <section class="top">
+            <div class="container">
+                <div class="top__inner">
+                    <div class="top__title">Салон красоты «Delote-Beauty» на Крестовском</div>
+                    <a class="top__slide" href="#services">Прокрутите вниз</a>
+                </div>
+
+            </div>
+        </section>
+        <section id="services" class="services">
+            <div class="container">
+                <div class="services__title">
+                    <img class="services__title-img" src="images/content/services/title.png" alt="images">
+                </div>
+                <div class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In arcu nibh vitae
+                    amet. Ipsum, pharetra donec ornare velit. Id at quisque accumsan risus ac ipsum ut. Sit elit,
+                    facilisi proin non malesuada sociis tristique. Viverra augue lorem ut quisque quam tortor, malesuada
+                    iaculis.</div>
+                <div class="services__text">Et elementum at nulla venenatis, faucibus integer. Auctor neque eros,
+                    viverra rutrum. Fames ultrices condimentum tortor nec penatibus. Velit imperdiet sapien fringilla
+                    vestibulum sit fames.</div>
+                <div class="services__inner">
+                    <div class="services__item">
+                        <img class="services__item-img" src="images/content/services/1.jpg" alt="images">
+                        <p class="services__item-text">Парикмахерские услуги</p>
+                    </div>
+                    <div class="services__item">
+                        <img class="services__item-img" src="images/content/services/2.jpg" alt="images">
+                        <p class="services__item-text">Маникюр</p>
+                    </div>
+                    <div class="services__item">
+                        <img class="services__item-img" src="images/content/services/3.jpg" alt="images">
+                        <p class="services__item-text">Педикюр</p>
+                    </div>
+                    <div class="services__item">
+                        <img class="services__item-img" src="images/content/services/4.jpg" alt="images">
+                        <p class="services__item-text">Косметология</p>
+                    </div>
+                    <div class="services__item">
+                        <img class="services__item-img" src="images/content/services/5.jpg" alt="images">
+                        <p class="services__item-text">Эстетист по телу</p>
+                    </div>
+                    <div class="services__item">
+                        <img class="services__item-img" src="images/content/services/6.jpg" alt="images">
+                        <p class="services__item-text">Визаж</p>
+                    </div>
+                </div>
+                <div class="partners">
+                    <ul class="partners__list">
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/content/partners/1.png" alt="partners images">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/content/partners/2.png" alt="partners images">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/content/partners/3.png" alt="partners images">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/content/partners/4.png" alt="partners images">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="ourWork">
+            <div class="container">
+                <div class="ourWork__title title">Наши работы</div>
+                <div class="ourWork__list">
+                    <button class="ourWork__btn ourWork__btn--active" type="button" data-filter="all">Показать все</button>
+                    <button class="ourWork__btn" type="button" data-filter=".category-a">Парикмахерские услуги</button>
+                    <button class="ourWork__btn" type="button" data-filter=".category-b">Маникюр</button>
+                    <button class="ourWork__btn" type="button" data-filter=".category-c">Педикюр</button>
+                </div>
+                <div class="ourWork__inner">
+                    <img class="ourWork__img mix category-d" src="images/content/ourWork/1.jpg" alt="images">
+                    <img class="ourWork__img mix category-d" src="images/content/ourWork/2.jpg" alt="images">
+                    <img class="ourWork__img mix category-b" src="images/content/ourWork/3.jpg" alt="images">
+                    <img class="ourWork__img mix category-d" src="images/content/ourWork/4.jpg" alt="images">
+                    <img class="ourWork__img mix category-a" src="images/content/ourWork/5.jpg" alt="images">
+                    <img class="ourWork__img mix category-a" src="images/content/ourWork/6.jpg" alt="images">
+                    <img class="ourWork__img mix category-b" src="images/content/ourWork/7.jpg" alt="images">
+                    <img class="ourWork__img mix category-a" src="images/content/ourWork/8.jpg" alt="images">
+                    <img class="ourWork__img mix category-a" src="images/content/ourWork/9.jpg" alt="images">
+                </div>
+            </div>
+        </section>
     </main>
 
 
     <footer class="footer">
-
+        <div class="container">
+            <div class="footer__inner">
+                <img class="footer__logo" src="images/icon/logo.svg" alt="logo">
+                <div class="footer__contacts">
+                    <h5 class="footer__title">Контакты</h5>
+                    <a class="footer__text" href="tel:+78121234567">+7 (812) 123-45-67</a>
+                    <a class="footer__text" href="tel:+78121234567">+7 (812) 123-45-67</a>
+                    <p class="footer__text">Новоостровский проспект, дом 36 лит. С</p>
+                </div>
+                <div class="footer__graphic">
+                    <h5 class="footer__title">Режим работы</h5>
+                    <p class="footer__text">C 10:00 до 21:00 (Пн-Пт)</p>
+                    <p class="footer__text">С 11:00 до 20:00 (Сб-Вс)</p>
+                </div>
+                <div class="footer__social">
+                    <h5 class="footer__title">Мы в Instagram</h5>
+                    <a class="footer__social-link" href="#">
+                        <img class="footer__social-img" src="images/icon/insta.svg" alt="insagram logo">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-copy">
+                <p class="footer-copy__text">Copyright © 2017 - 2022</p>
+            </div>
+        </div>
     </footer>
-
+    
 
     <script src="js/main.min.js"></script>
 </body>

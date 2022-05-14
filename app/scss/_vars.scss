@@ -1,9 +1,27 @@
-$default: #436372;
+$default-bg: #111111;
+$hover: #CDAA7D;
 
-// %Rubik-300{
-//     font-family: 'Rubik-Light', sans-serif;
-//     font-weight: 300;
-// }
+%CormorantGaramond-400{
+    font-family: 'CormorantGaramond-Regular', sans-serif;
+    font-weight: 400;
+}
+%CormorantGaramond-600{
+    font-family: 'CormorantGaramond-SemiBold', sans-serif;
+    font-weight: 600;
+}
+%CormorantGaramond-700{
+    font-family: 'CormorantGaramond-Bold', sans-serif;
+    font-weight: 700;
+}
+%EBGaramond-400{
+    font-family: 'EBGaramond-Regular', sans-serif;
+    font-weight: 400;
+}
+%EBGaramond-700{
+    font-family: 'EBGaramond-Bold', sans-serif;
+    font-weight: 700;
+}
+
 
 
 // %checkbox-hidden{

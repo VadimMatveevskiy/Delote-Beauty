@@ -1,0 +1,29 @@
+.footer{
+    &__inner{
+        padding: 80px 0;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #fff;
+        border-top: 1px solid #fff;
+        align-items: start;
+    }
+    &__title{
+        @extend %EBGaramond-700;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 25px;
+    }
+    &__text{
+        color: #fff;
+        display: block;
+        &+.footer__text{
+            margin-top: 15px;
+        }
+    }
+}
+.footer-copy{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

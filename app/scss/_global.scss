@@ -1,11 +1,16 @@
 html,
 body{
     height: 100%;
+    background-color: #111;
 }
 
 body{
     display: flex;
     flex-direction: column;
+    color: #fff;
+    @extend %CormorantGaramond-400;
+    font-size: 18px;
+    line-height: 24px;
 }
 
 
@@ -14,7 +19,14 @@ body{
 }
 
 .container{
-    max-width: 1800px;
+    max-width: 1315px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.title{
+@extend %EBGaramond-700;
+font-size: 48px;
+line-height: 58px;
+text-align: center;
 }
