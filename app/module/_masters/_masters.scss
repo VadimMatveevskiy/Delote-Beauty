@@ -1,0 +1,37 @@
+.masters{
+    padding: 80px 0;
+    &__title{
+        margin-bottom: 100px;
+    }
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__item{
+        width: 400px;
+        height: 575px;
+        margin-bottom: 80px;
+        z-index: 0;
+        position: relative; 
+        &::after{
+            content: '';
+            position: absolute;
+            width: 396px;
+            height: 477px;
+            top: -20px;
+            right: -16px;
+            border: 1px solid #CDAA7D;
+            z-index: -1;
+        }
+    }
+    &__item-img{
+        margin-bottom: 30px;
+    }
+    &__item-name{
+        margin-bottom: 10px;
+        font-size: 27px;
+        line-height: 35px;
+        @extend %EBGaramond-700;
+    }
+}

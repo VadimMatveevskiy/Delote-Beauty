@@ -1,4 +1,11 @@
 $(function(){
+
+    $('.header__btn').on('click', function(){
+        $('.header__menu-item').addClass('header__menu-item--active');
+    })
+    $('.header__menu-btn').on('click', function(){
+        $('.header__menu-item').removeClass('header__menu-item--active');
+    })
     
     $('.top__slide').on('click', function(event){
         event.preventDefault();

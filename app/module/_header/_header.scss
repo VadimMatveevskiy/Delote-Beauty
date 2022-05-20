@@ -1,7 +1,9 @@
 .header{
     height: 100px;
     z-index: 1;
+    position: relative;
     &__inner{
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
         height: 100px;
         display: flex;
         justify-content: space-between;
@@ -64,5 +66,56 @@
             background-color: #fff;
             left: -10px;
         }
+    }
+    &__menu{
+        overflow: hidden;
+    }
+    &__menu-item{
+        transform: translateY(-100%);
+        box-sizing: border-box;
+        position: absolute;
+        height: 100vh;
+        width: 475px;
+        right: 0;
+        top: 0;
+        padding: 246px 80px;
+        z-index: 1;
+        background-color: #000;
+        overflow: hidden;
+        transition: all .3s;
+        &.header__menu-item--active{
+            transform: translateY(0%);
+            transition: all .3s;
+        }
+        .footer__contacts{
+            margin-bottom: 60px;
+        }
+    }
+    &__menu-btn{
+        display: inline-block;
+        position: absolute;
+        top: 40px;
+        height: 18px;
+        padding: 14px 15px 0px 22px;
+        cursor: pointer;
+        &::after,
+        &::before{
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            background-color: #fff;
+            left: 0;
+        }
+        &::after{
+            transform: rotate(45deg);
+        }
+        &::before{
+            transform: rotate(-45deg);
+        }
+        
+    }
+    &__menu-text{
+        margin-bottom: 80px;
     }
 }

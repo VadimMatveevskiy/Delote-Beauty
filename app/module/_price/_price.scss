@@ -1,0 +1,40 @@
+.price{
+    padding: 80px 0;
+    &__title{
+        margin-bottom: 80px;
+    }
+    &__item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &+.price__item{
+            margin-top: 80px;
+        }
+    }
+    &__item-img{
+        width: 636px;
+        height: 536px;
+    }
+    &__item-box{
+        width: 526px;
+    }
+    &__services{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        & + .price__services{
+            margin-top: 40px;
+        }
+    }
+    &__services-name,
+    &__services-price{
+        @extend %EBGaramond-400;
+        font-size: 27px;
+        line-height: 35px;
+    }
+    &__services-about{
+        margin-top: 10px;
+    }
+}
